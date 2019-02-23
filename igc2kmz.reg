@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00 
+ 
+[HKEY_CLASSES_ROOT\Folder\shell\Create KMZ for IGC files] 
+@="Create KMZ for IGC files" 
+ 
+[HKEY_CLASSES_ROOT\Folder\shell\Create KMZ for IGC files\command] 
+@="\"C:\\igc\\igc2kmz.bat\" \"%1\""
