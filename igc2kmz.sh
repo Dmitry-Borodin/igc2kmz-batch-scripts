@@ -7,8 +7,7 @@
 IGC2KMZ="/home/dmitry/apps/converting/igc2kmz/bin/igc2kmz.py"
 PY="/usr/bin/python2.7"
 
-echo "starting script for converting tracks"
-echo "parameter passed is $1"
+echo "Start script for converting tracks"
 
 usage() { echo "Usage: $0 [-d <string> directory to search for igc files]" 1>&2; exit 1; }
 
@@ -38,8 +37,6 @@ fi
 OIFS="$IFS"
 IFS=$'\n'
 
-echo "Files search result $(find ${d} -name "*.igc" -type f)"
-
 for f in $(find ${d} -name "*.igc" -type f); do
     dirname="$(dirname ${f})"
     color="FFFFFFFF"
@@ -58,4 +55,5 @@ for f in $(find ${d} -name "*.igc" -type f); do
     fi
 done
 IFS="$OIFS"
+
 
