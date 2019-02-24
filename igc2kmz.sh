@@ -4,12 +4,19 @@
 # all *.igc files in dir to *.kmz
 # Put color.txt with color line like FF00FFFF in each subfolder to define track color
 
-IGC2KMZ="/home/dmitry/apps/converting/igc2kmz/bin/igc2kmz.py"
+#set -xe #for debugging and early abort on error
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+IGC2KMZ="$SCRIPT_DIR/../igc2kmz/bin/igc2kmz.py"
 PY="/usr/bin/python2.7"
+TRACKS_DEFAULT="$SCRIPT_DIR/.."
 
 echo "Start script for converting tracks"
 
 usage() { echo "Usage: $0 [-d <string> directory to search for igc files]" 1>&2; exit 1; }
+
+d=$TRACKS_DEFAULT
 
 while getopts ":d:" o; do
     case "${o}" in
