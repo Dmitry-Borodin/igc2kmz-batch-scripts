@@ -44,7 +44,7 @@ fi
 OIFS="$IFS"
 IFS=$'\n'
 
-for f in $(find ${d} -name "*.igc" -type f); do
+for f in $(find ${d} -iname "*.igc" -type f); do
     dirname="$(dirname ${f})"
     color="FFFFFFFF"
 
