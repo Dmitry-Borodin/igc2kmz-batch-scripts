@@ -4,7 +4,8 @@
 
 Scripts for an [igc2kmz project](https://github.com/twpayne/igc2kmz) to convert all *.igc files in dir to *.kmz
 
-Based on [Ivan Kravchenko's gists](https://gist.github.com/Iv)
+Based on [Ivan Kravchenko's gists](https://gist.github.com/Iv).
+
 I think repository makes it easier to find and contribute.
 
 ## Usage
