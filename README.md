@@ -8,9 +8,14 @@ Based on [Ivan Kravchenko's gists](https://gist.github.com/Iv).
 
 I think repository makes it easier to find and contribute.
 
+## Installation
+* Install Python 2.7
+* Download [igc2kmz](https://github.com/twpayne/igc2kmz) and this project. Unpack both in the same folder
+* Update path in the scripts if needed.
+
 ## Usage
 
-Look at the files. It's simple. [contributions are welcome, expecially in this part]
+[contributions are welcome, expecially in this part]
 
 1)Create a subfolders for each group member
 2)Put tracks and color.txt files inside.
