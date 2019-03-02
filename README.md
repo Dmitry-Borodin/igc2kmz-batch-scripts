@@ -11,7 +11,11 @@ I think repository makes it easier to find and contribute.
 ## Installation
 * Install Python 2.7
 * Download [igc2kmz](https://github.com/twpayne/igc2kmz) and this project. Unpack both in the same folder
-* Update path in the scripts if needed.
+* Update path in the scripts if needed:
+- Windows:
+- igc2kmz.reg -update path to the igc2kmz.bat file and add to registry
+- igc2kmz.bat - update path to igc2kmz project and python (downloaded above)
+
 
 ## Usage
 
