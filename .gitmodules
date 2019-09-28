@@ -1,0 +1,3 @@
+[submodule "igc2kmz"]
+	path = igc2kmz
+	url = git@github.com:twpayne/igc2kmz.git

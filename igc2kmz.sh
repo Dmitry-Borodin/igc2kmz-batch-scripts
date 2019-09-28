@@ -8,9 +8,9 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-IGC2KMZ="$SCRIPT_DIR/../igc2kmz/bin/igc2kmz.py"
+IGC2KMZ="$SCRIPT_DIR/igc2kmz/bin/igc2kmz.py"
 PY="/usr/bin/python2.7"
-TRACKS_DEFAULT="$SCRIPT_DIR/.."
+TRACKS_DEFAULT="$SCRIPT_DIR/"
 
 echo "Start script for converting tracks"
 
