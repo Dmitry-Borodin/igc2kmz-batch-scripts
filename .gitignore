@@ -1,0 +1,4 @@
+#ignore all folders in root
+/*/
+#except this one
+!/igc2kmz/
