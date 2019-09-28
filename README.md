@@ -10,9 +10,8 @@ I think repository makes it easier to find and contribute.
 
 ## Installation
 * Install Python 2.7
-* Download [igc2kmz](https://github.com/twpayne/igc2kmz) and this project. Unpack both in the same folder
-* Update path in the scripts if needed:
-- Windows:
+* Download this repo 'git clone --recurse-submodules git@github.com:Dmitry-Borodin/igc2kmz-batch-scripts.git'
+* For Windows update path in the scripts if needed:
 - igc2kmz.reg -update path to the igc2kmz.bat file and add to registry
 - igc2kmz.bat - update path to igc2kmz project and python (downloaded above)
 
@@ -21,9 +20,8 @@ I think repository makes it easier to find and contribute.
 
 [contributions are welcome, expecially in this part]
 
-1)Create a subfolders for each group member
-2)Put tracks and color.txt files inside.
-3)Put this project in thie folder
+1)Create subfolders for each group member
+2)Put tracks and color.txt (optional) files inside.
 3)Run the script
 
 Happy flights review on Google Earth.
