@@ -4,6 +4,9 @@
 
 Scripts for an [igc2kmz project](https://github.com/twpayne/igc2kmz) to convert all *.igc files in dir to *.kmz
 
+It adds coloring for lift/sink, calculate thermals, altitude points et.c. so it's very handy to analyze tracks in google earth afterwards.
+
+
 Based on [Ivan Kravchenko's gists](https://gist.github.com/Iv).
 
 I think repository makes it easier to find and contribute.
