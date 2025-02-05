@@ -28,3 +28,8 @@ I think repository makes it easier to find and contribute.
 3)Run the script
 
 Happy flights review on Google Earth.
+
+
+# Other options
+https://spasutto.github.io/igc2kmz/igc2kmz.html
+telegram @igc2kmz_bot 
