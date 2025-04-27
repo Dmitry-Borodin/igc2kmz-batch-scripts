@@ -15,7 +15,7 @@ if not exist "kmz_name" (
    if exist "%%~dpFcolor.txt" (set /p col=<"%%~dpFcolor.txt") else (set col="ffffffff") 
    
    echo "%%F" to "!kmz_name!" color "!col!"    
-   c:\Python27\python.exe c:\igc\igc2kmz\bin\igc2kmz.py -i "%%F" -o "!kmz_name!" -c "!col!" -n "!pname!" 
+   c:\Python3\python.exe c:\igc\igc2kmz\bin\igc2kmz.py -i "%%F" -o "!kmz_name!" -c "!col!" -n "!pname!"
 ) 
 )
 
