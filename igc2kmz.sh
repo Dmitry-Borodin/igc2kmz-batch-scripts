@@ -91,6 +91,11 @@ BEGIN {
 }
 {
     if ($0 ~ /^B/) {
+        lat_raw = substr($0, 8, 7)
+        lon_raw = substr($0, 16, 8)
+        if (lat_raw == "0000000" && lon_raw == "00000000") {
+            next
+        }
         b_idx++
         if (b_idx == 1) {
             print
