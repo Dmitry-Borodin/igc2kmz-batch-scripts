@@ -62,7 +62,12 @@ for f in $(find ${d} -iname "*.igc" -type f); do
 
     pname=$(echo $dirname|xargs basename)
 
-    out="${f}.kmz"
+    out="${f%.*}.kmz"
+
+    if [ -f "$out" ]; then
+        echo "Skipping ${f}; already converted"
+        continue
+    fi
 
     extra_args=()
     olc_tmp=
@@ -139,10 +144,8 @@ END {
         echo "Failed to run Leonardo optimizer for ${f}" >&2
     fi
 
-    if [ ! -f "$out" ]; then
-        $PY $IGC2KMZ -i "${f}" -o "${out}" -c $color -n $pname "${extra_args[@]}"
-        echo "Converted ${f} to ${out} with color=${color} and pilot=${pname}"
-    fi
+    $PY $IGC2KMZ -i "${f}" -o "${out}" -c $color -n $pname "${extra_args[@]}"
+    echo "Converted ${f} to ${out} with color=${color} and pilot=${pname}"
     rm -f "$olc_tmp" "$gpx_tmp" "$filtered_igc"
 done
 IFS="$OIFS"
